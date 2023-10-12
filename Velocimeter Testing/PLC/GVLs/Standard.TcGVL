@@ -13,6 +13,10 @@ VAR_GLOBAL
 	
 	Reel					:AXIS_REF;
 	
+	
+	bSetBTN			AT %I*	   	:BOOL;
+	bStartBTN       at %I*       :bool;
+	bStopBTN        at %I*       :bool;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
