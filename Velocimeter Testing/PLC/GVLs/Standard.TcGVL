@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="Standard" Id="{83f8f447-0eb1-4d0c-b486-f84fc99139ff}">
+    <Declaration><![CDATA[{attribute 'Tc2GVLVarNames'}
+VAR_GLOBAL
+	bstart					:BOOL;
+	bSet					:BOOL;
+	bstop                   :BOOL;
+	
+	LaserD				AT %I*	 :UINT;
+	VelocimeterD      	AT %I*   :UINT;
+	EncoderD           			   :LREAL;
+	
+	Reel					:AXIS_REF;
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

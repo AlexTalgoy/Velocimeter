@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{42181531-c32c-4115-8b0f-9c27bdf5888c}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[uiEncoderV := reel.NcToPlc.ActPos
+
+Laser();
+Reel();
+Velocimeter();
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="18" Count="1" />
+      <LineId Id="10" Count="0" />
+      <LineId Id="15" Count="2" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
