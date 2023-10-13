@@ -5,6 +5,7 @@
 VAR
 	Hello :BOOL;
 	
+	
 END_VAR
 ]]></Declaration>
     <Implementation>
@@ -12,14 +13,17 @@ END_VAR
 
 Laser();
 
-Reel();
+
 
 Velocimeter();
 
+ReelCommand();
+
 
 IF bSet OR bSetBTN THEN
-	LaserD := 0;
-	VelocimeterD := 0;
+	laserSetpoint	:= reallaserD;
+	VelocimeterSetPoint := realVelocimeterD;
+	
 END_IF
 
 ]]></ST>
@@ -31,9 +35,13 @@ END_IF
       <LineId Id="15" Count="0" />
       <LineId Id="26" Count="0" />
       <LineId Id="16" Count="0" />
-      <LineId Id="27" Count="2" />
+      <LineId Id="27" Count="1" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="45" Count="0" />
+      <LineId Id="29" Count="0" />
       <LineId Id="31" Count="0" />
       <LineId Id="34" Count="0" />
+      <LineId Id="47" Count="0" />
       <LineId Id="32" Count="0" />
       <LineId Id="30" Count="0" />
       <LineId Id="17" Count="0" />

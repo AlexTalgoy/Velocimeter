@@ -1566,6 +1566,7 @@ External Setpoint Generation:
 		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000000000ff00ffff00ffff00ff000000ff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ff000000ff00ff000000ff00ff000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff000000000000ff00ff000000000000ff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ff000000ff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
 		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1006">424db6030000000000003600000028000000100000000e000000010020000000000080030000c40e0000c40e00000000000000000000ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ffe0e0e0ffe0e0e0ffe0e0e0ffe0e0e0ff808080ff808080ff808080ff808080ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ff9c9c9cff242424ff9c9c9cffe0e0e0ffc0c0c0ff000000ffc0c0c0ff000000ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ff9c9c9cff242424ff9c9c9cffe0e0e0ffc0c0c0ff00ffffffc0c0c0ff00ffffff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ff9c9c9cff242424ff9c9c9cffe0e0e0ffc0c0c0ffc0c0c0ffc0c0c0ffc0c0c0ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ff9c9c9cff242424ff9c9c9cffe0e0e0ffc0c0c0ff000000ffc0c0c0ff000000ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ff9c9c9cff242424ff9c9c9cffe0e0e0ffc0c0c0ffff0000ffc0c0c0ffff0000ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ff9c9c9cff242424ff9c9c9cffe0e0e0ffc0c0c0ffc0c0c0ffc0c0c0ffc0c0c0ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ff9c9c9cff242424ff9c9c9cffe0e0e0ffc0c0c0ff000000ffc0c0c0ff000000ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ffe0e0e0ffe0e0e0ffe0e0e0ffe0e0e0ffc0c0c0ff0000ffffc0c0c0ff0000ffff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ff9c9c9cff242424ff9c9c9cffe0e0e0ffc0c0c0ffc0c0c0ffc0c0c0ffc0c0c0ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ffe0e0e0ffe0e0e0ffe0e0e0ffe0e0e0ffc0c0c0ff000000ffc0c0c0ff000000ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ffc6c6c6ff242424ffc6c6c6ffe0e0e0ffc0c0c0ffc0c0c0ffc0c0c0ffc0c0c0ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ff242424ffe0e0e0ff242424ffe0e0e0ffc0c0c0ff008000ffc0c0c0ff008000ff808080ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00e0e0e0ffc6c6c6ff242424ffc6c6c6ffe0e0e0ffc0c0c0ffc0c0c0ffc0c0c0ffc0c0c0ff808080ffff00ff00ff00ff00</ImageData>
 	</ImageDatas>
 	<Project ProjectGUID="{9A3571A0-BBA0-4E2A-8483-DFBEF5AFC507}" Target64Bit="true" ShowHideConfigurations="#x6">
 		<System>
@@ -1737,22 +1738,34 @@ External Setpoint Generation:
 		</Motion>
 		<Plc>
 			<Project GUID="{BE78A640-2D25-415F-9A66-C30E115CC33D}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{1B56E4E9-8B52-FF41-5811-A23FA5D9FBD4}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{0B4959AF-166C-422D-62D0-0AC078E73B30}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
 						<Var>
-							<Name>Standard.LaserD</Name>
-							<Type>UINT</Type>
+							<Name>Standard.bSetBTN</Name>
+							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>Standard.VelocimeterD</Name>
-							<Type>UINT</Type>
+							<Name>Standard.bStartBTN</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>Standard.bStopBTN</Name>
+							<Type>BOOL</Type>
 						</Var>
 						<Var>
 							<Name>Standard.Reel.NcToPlc</Name>
 							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>Standard.RealLaserD</Name>
+							<Type>UINT</Type>
+						</Var>
+						<Var>
+							<Name>Standard.RealVelocimeterD</Name>
+							<Type>UINT</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
@@ -1762,6 +1775,21 @@ External Setpoint Generation:
 							<Type GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 						</Var>
 					</Vars>
+					<UnrestoredVarLinks ImportTime="2023-10-13T13:45:23">
+						<OwnerA Name="InputDst" Prefix="TIPC^PLC^PLC Instance" Type="1">
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3058)">
+								<Link VarA="Standard.LaserD" TypeA="UINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="AI Standard Channel 1^Value" RestoreInfo="ANotFound"/>
+							</OwnerB>
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL5101)">
+								<Link VarA="Standard.VelocimeterD" TypeA="UINT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000005}" VarB="ENC Status compact^Counter value" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+						<OwnerA Name="OutputSrc" Prefix="TIPC^PLC^PLC Instance" Type="2">
+							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL5101)">
+								<Link VarA="Standard.ResetVelocimeter" TypeA="WORD" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000004}" VarB="ENC Control compact^Control" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
 					<Contexts>
 						<Context>
 							<Id>0</Id>
@@ -1809,6 +1837,9 @@ External Setpoint Generation:
 				</AddressInfo>
 				<Image Id="1" AddrType="9" ImageType="3">
 					<Name>Image</Name>
+				</Image>
+				<Image Id="4" AddrType="10" ImageType="3">
+					<Name>Image-2</Name>
 				</Image>
 				<Box Id="1" BoxType="9099">
 					<Name>Term 1 (EK1200)</Name>
@@ -2573,7 +2604,6 @@ External Setpoint Generation:
 							<MBoxUserCmdData>020003000a0000001a00000000000000000000000000000000000000000000002010801202000000050043757272656e74206c6f6f7020696e74656772616c2074696d6500</MBoxUserCmdData>
 							<MBoxUserCmdData>020003000c0000001f000000000000000000000000000000000000000000000020108015040000009100000056656c6f63697479206c6f6f702070726f706f7274696f6e616c206761696e00</MBoxUserCmdData>
 							<MBoxUserCmdData>020003000c0000001b000000000000000000000000000000000000000000000020108014040000009600000056656c6f63697479206c6f6f7020696e74656772616c2074696d6500</MBoxUserCmdData>
-							<MBoxUserCmdData>020003000c0000001f000000000000000000000000000000000000000000000020108017040000000a000000506f736974696f6e206c6f6f702070726f706f7274696f6e616c206761696e00</MBoxUserCmdData>
 							<Pdo Name="FB Position" Index="#x1a00" Flags="#x0010" SyncMan="3">
 								<Entry Name="Position" Index="#x6000" Sub="#x11">
 									<Type>UDINT</Type>
@@ -3264,7 +3294,7 @@ Bit 8 - 15 : reserved]]></Comment>
 							<BootStrapData>0010f400f410f400</BootStrapData>
 							<Pdo Name="AI Standard Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
 								<ExcludePdo>#x1a01</ExcludePdo>
-								<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+								<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01" Flags="#x00008020">
 									<Type>BIT</Type>
 									<Comment><![CDATA[Underrange event active]]></Comment>
 								</Entry>
@@ -3292,11 +3322,11 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 								<Entry Name="Status__">
 									<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
 								</Entry>
-								<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+								<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f" Flags="#x00008020">
 									<Type>BIT</Type>
 									<Comment><![CDATA[TRUE when this TxPDO is not valid]]></Comment>
 								</Entry>
-								<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+								<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10" Flags="#x00008020">
 									<Type>BIT</Type>
 									<Comment><![CDATA[Bit toggles everytime when new value available]]></Comment>
 								</Entry>
@@ -3732,7 +3762,7 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 								<ExcludePdo>#x1a00</ExcludePdo>
 								<ExcludePdo>#x1a01</ExcludePdo>
 								<ExcludePdo>#x1a02</ExcludePdo>
-								<Entry Name="Status__Latch C valid" Index="#x6010" Sub="#x01">
+								<Entry Name="Status__Latch C valid" Index="#x6010" Sub="#x01" Flags="#x00008020">
 									<Type>BIT</Type>
 								</Entry>
 								<Entry Name="Status__Latch extern valid" Index="#x6010" Sub="#x02">
@@ -3912,16 +3942,16 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 								<ExcludePdo>#x1603</ExcludePdo>
 								<ExcludePdo>#x1600</ExcludePdo>
 								<ExcludePdo>#x1601</ExcludePdo>
-								<Entry Name="Control__Enable latch C" Index="#x7010" Sub="#x01">
+								<Entry Name="Control__Enable latch C" Index="#x7010" Sub="#x01" Flags="#x00008020">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Control__Enable latch extern on positive edge" Index="#x7010" Sub="#x02">
+								<Entry Name="Control__Enable latch extern on positive edge" Index="#x7010" Sub="#x02" Flags="#x00008020">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+								<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03" Flags="#x00008020">
 									<Type>BIT</Type>
 								</Entry>
-								<Entry Name="Control__Enable latch extern on negative edge" Index="#x7010" Sub="#x04">
+								<Entry Name="Control__Enable latch extern on negative edge" Index="#x7010" Sub="#x04" Flags="#x00008020">
 									<Type>BIT</Type>
 								</Entry>
 								<Entry Name="Control__">
@@ -3972,11 +4002,66 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				</Box>
 				<EtherCAT DcSyncMode="3"/>
 			</Device>
+			<Device Id="4" DevType="57" AmsPort="28676">
+				<Name>Device 4 (USB)</Name>
+				<Image Id="6" AddrType="1" ImageType="3">
+					<Name>Image</Name>
+				</Image>
+				<Box Id="7" BoxType="9900" AmsPort="28928">
+					<Name>Box 1 (CX2100 Power Supply)</Name>
+					<ImageId>1006</ImageId>
+					<Usb DipSwitch="1" DeviceHandle="\\?\usb#vid_0978&amp;pid_2100#6&amp;3480b4d5&amp;0&amp;2#{38ab75a3-c17b-42d5-a56f-fcfa8acc2335}" VendorId="2" ProductCode="137650226" RevisionNo="1245184" nImageUpdateCycleTimeMs="50" nAmsPortEsbDevice="28161" Divider="4" AutoDivider="true">
+						<EtherCAT SlaveType="2" PdiType="#x0005" SyncUnitBits="false" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x08346032" RevisionNo="#x00130000" InfoDataState="false" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="3">
+							<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+							<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+							<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+							<SyncMan>801102002000010004000000000000000200801120010000</SyncMan>
+							<Fmmu>0000000000000000000000010000000002000000000000000000000000000000</Fmmu>
+							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+							<BootStrapData>0010f400f410f400</BootStrapData>
+							<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000007cfcffffa0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+							<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e7075742062617365642900000000000000000000007cfcffffa0860100000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+							<Pdo Name="DIS Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+								</Entry>
+								<Entry Name="Status__Up" Index="#x6000" Sub="#x03">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Down" Index="#x6000" Sub="#x04">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Left" Index="#x6000" Sub="#x05">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Right" Index="#x6000" Sub="#x06">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__Enter" Index="#x6000" Sub="#x07">
+									<Type>BIT</Type>
+								</Entry>
+								<Entry Name="Status__">
+									<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+								</Entry>
+								<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+									<Type>BIT</Type>
+								</Entry>
+							</Pdo>
+							<CoeProfile ProfileNo="39392137"/>
+						</EtherCAT>
+					</Usb>
+				</Box>
+				<Usb VirtualDeviceName="true"/>
+			</Device>
 		</Io>
 	</Project>
 	<Mappings>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500841000403}" Id="#x02030020"/>
+		<MappingInfo Identifier="{00000000-2001-0850-0020-500860000403}" Id="#x02030050"/>
 		<MappingInfo Identifier="{00000000-0010-0304-3000-040310000403}" Id="#x02030010"/>
-		<MappingInfo Identifier="{00000000-0020-0304-3000-040321000403}" Id="#x02030020"/>
+		<MappingInfo Identifier="{00000000-0020-0304-3000-040322000403}" Id="#x02030030"/>
+		<MappingInfo Identifier="{05000010-2001-0850-3000-040300205008}" Id="#x02030040" Watchdog="14000000040000000400000004000000"/>
 		<OwnerA Name="TINC^NC-Task 1 SAF^Axes^Axis 1">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL7221-9014)">
 				<Link VarA="Drive^Inputs^In^nDcOutputTime" VarB="InfoData^DcOutputShift"/>
@@ -3994,6 +4079,17 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 			</OwnerB>
 		</OwnerA>
 		<OwnerA Name="TIPC^PLC^PLC Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 4 (EL3058)">
+				<Link VarA="PlcTask Inputs^Standard.RealLaserD" VarB="AI Standard Channel 1^Value"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL5101)">
+				<Link VarA="PlcTask Inputs^Standard.RealVelocimeterD" VarB="ENC Status compact^Counter value"/>
+			</OwnerB>
+			<OwnerB Name="TIID^Device 4 (USB)^Box 1 (CX2100 Power Supply)">
+				<Link VarA="PlcTask Inputs^Standard.bSetBTN" VarB="DIS Inputs^Status^Down"/>
+				<Link VarA="PlcTask Inputs^Standard.bStartBTN" VarB="DIS Inputs^Status^Up"/>
+				<Link VarA="PlcTask Inputs^Standard.bStopBTN" VarB="DIS Inputs^Status^Enter"/>
+			</OwnerB>
 			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^Axis 1">
 				<Link VarA="PlcTask Inputs^Standard.Reel.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^Standard.Reel.PlcToNc" VarB="Inputs^FromPlc"/>

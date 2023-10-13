@@ -6,9 +6,15 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[VelocimeterD := (RealVelocimeterD - VelocimeterSetPoint);
+
+
+
+]]></ST>
     </Implementation>
     <LineIds Name="VELOCIMETER">
+      <LineId Id="11" Count="1" />
+      <LineId Id="9" Count="1" />
       <LineId Id="5" Count="0" />
     </LineIds>
   </POU>

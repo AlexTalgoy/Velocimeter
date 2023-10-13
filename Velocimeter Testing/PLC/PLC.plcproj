@@ -31,7 +31,7 @@
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\Reel.TcPOU">
+    <Compile Include="POUs\ReelCommand.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\VELOCIMETER.TcPOU">

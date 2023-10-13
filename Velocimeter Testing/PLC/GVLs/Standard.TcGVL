@@ -7,9 +7,17 @@ VAR_GLOBAL
 	bSet					:BOOL;
 	bstop                   :BOOL;
 	
-	LaserD				AT %I*	 :UINT;
-	VelocimeterD      	AT %I*   :UINT;
+	RealLaserD				AT %I*	 :UINT;
+	RealVelocimeterD      	AT %I*   :UINT;
 	EncoderD           			   :LREAL;
+	
+	
+	laserSetPoint					:UINT;
+	LaserD							:UINT;
+	
+	VelocimeterSetPoint				:UINT;
+	VelocimeterD                    :UINT;
+	
 	
 	Reel					:AXIS_REF;
 	
