@@ -9,6 +9,8 @@ VAR_GLOBAL
 	
 	RealLaserD				AT %I*	 :UINT;
 	RealVelocimeterD      	AT %I*   :UINT;
+	RealEncoder				AT %I*	:UINT;
+
 	EncoderD           			   :LREAL;
 	
 	
