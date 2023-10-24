@@ -1596,12 +1596,12 @@ External Setpoint Generation:
 				<Axis Id="1" CreateSymbols="true" AxisType="1">
 					<Name>Axis Reel</Name>
 					<AxisPara>
-						<Dynamic Acceleration="11005.825" Deceleration="11005.825" Jerk="33017.475"/>
-						<Velo RefSearch="73.3721666666667" RefSync="73.3721666666667" SlowManual="366.860833333333" FastManual="2201.165" Fast="7337.21666666667" Maximum="7337.21666666667"/>
+						<Dynamic Acceleration="13187.03125" Deceleration="13187.03125" Jerk="39561.09375"/>
+						<Velo RefSearch="87.9135416666667" RefSync="87.9135416666667" SlowManual="439.567708333333" FastManual="2637.40625" Fast="8791.35416666667" Maximum="8791.35416666667"/>
 						<OtherSettings AllowMotionCmdToSlave="true"/>
 					</AxisPara>
 					<Encoder Name="Enc" EncType="19">
-						<EncPara ScaleFactorNumerator="193" ScaleFactorDenominator="1048576" MaxCount="#xffffffff"/>
+						<EncPara ScaleFactorNumerator="231.25" ScaleFactorDenominator="1048576" MaxCount="#xffffffff"/>
 						<Vars VarGrpType="1">
 							<Name>Inputs</Name>
 							<Var>
@@ -1660,7 +1660,7 @@ External Setpoint Generation:
 					</Encoder>
 					<Drive Name="Drive" DrvType="16">
 						<DrvPara MaxCount="#xffffffff" DriveControlDWord="#x00020000">
-							<Analog VeloReferenz="8070.93833333333" VeloScale="32" TorqueSetpointScale="10" ScaleFactorActTorque="0.1"/>
+							<Analog VeloReferenz="9670.48958333333" VeloScale="32" TorqueSetpointScale="10" ScaleFactorActTorque="0.1"/>
 							<TimeComp TaskDelayCycles="1"/>
 						</DrvPara>
 						<Vars VarGrpType="1">
@@ -1735,166 +1735,11 @@ External Setpoint Generation:
 						</Var>
 					</Vars>
 				</Axis>
-				<Axis Id="2" CreateSymbols="true" AxisType="5">
-					<Name>Axis Encoder</Name>
-					<AxisPara>
-						<General UnitFlags="#x00000002"/>
-						<OtherSettings AllowMotionCmdToSlave="true"/>
-					</AxisPara>
-					<Encoder Name="Enc" EncType="1">
-						<Vars VarGrpType="1">
-							<Name>Inputs</Name>
-							<Var>
-								<Name>In</Name>
-								<Type GUID="{901C2423-655B-45CE-B7E3-21F174F0F99F}" Namespace="MC">NCENCODERSTRUCT_IN2B</Type>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn1</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn2</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn3</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn4</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn5</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn6</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn7</Name>
-									<Comment><![CDATA[Drive Velocity Actual Value
-]]></Comment>
-								</SubVar>
-							</Var>
-						</Vars>
-						<Vars VarGrpType="2">
-							<Name>Outputs</Name>
-							<Var>
-								<Name>Out</Name>
-								<Type GUID="{9CC50AB2-5D79-4869-A3C2-1FA7761BAFEA}" Namespace="MC">NCENCODERSTRUCT_OUT2</Type>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut1</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut2</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut3</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut4</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut5</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut6</Name>
-								</SubVar>
-							</Var>
-						</Vars>
-					</Encoder>
-					<Drive Name="Drive" DrvType="5">
-						<DrvPara>
-							<Analog TorqueSetpointScale="10" ScaleFactorActTorque="0.1"/>
-							<TimeComp TaskDelayCycles="1"/>
-						</DrvPara>
-						<Vars VarGrpType="1">
-							<Name>Inputs</Name>
-							<Var>
-								<Name>In</Name>
-								<Type GUID="{F95C7C69-0C87-46C4-9559-1285CCA5B23A}" Namespace="MC">NCDRIVESTRUCT_IN2</Type>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn1</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn2</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn3</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn4</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn5</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataIn6</Name>
-								</SubVar>
-							</Var>
-						</Vars>
-						<Vars VarGrpType="2">
-							<Name>Outputs</Name>
-							<Var>
-								<Name>Out</Name>
-								<Type GUID="{644DC4BD-3D15-4DCB-94C7-24F3A5D579AA}" Namespace="MC">NCDRIVESTRUCT_OUT2</Type>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut1</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut2</Name>
-								</SubVar>
-								<SubVar>
-									<Name>nCtrl2</Name>
-									<Comment><![CDATA[Digital Outputs Setpoint Generator:
-0x41 (0100 0001) = Minus (0x42 for inverse motor polarity)
-0x42 (0100 0010) = Plus (0x41 for inverse motor polarity)
-0x80 (1000 0000) = Stop
-]]></Comment>
-								</SubVar>
-								<SubVar>
-									<Name>nCtrl3</Name>
-									<Comment><![CDATA[Digital Outputs (Setpoint Generator + Position Controller):
-0x41 (0100 0001) = Minus (0x42 for inverse motor polarity)
-0x42 (0100 0010) = Plus (0x41 for inverse motor polarity)
-0x80 (1000 0000) = Stop
-]]></Comment>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut3</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut4</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut5</Name>
-								</SubVar>
-								<SubVar TypeFormatIndex="2">
-									<Name>nDataOut6</Name>
-								</SubVar>
-							</Var>
-						</Vars>
-					</Drive>
-					<Controller Name="Ctrl" CtrType="1">
-						<CtrPara PriorControlFactor="1">
-							<Observer BandWidth="20"/>
-						</CtrPara>
-					</Controller>
-					<Vars VarGrpType="1" InsertType="1">
-						<Name>Inputs</Name>
-						<Var>
-							<Name>FromPlc</Name>
-							<Type GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" Namespace="MC">PLCTONC_AXIS_REF</Type>
-						</Var>
-					</Vars>
-					<Vars VarGrpType="2" InsertType="1">
-						<Name>Outputs</Name>
-						<Var>
-							<Name>ToPlc</Name>
-							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
-						</Var>
-					</Vars>
-				</Axis>
 			</NC>
 		</Motion>
 		<Plc>
 			<Project GUID="{BE78A640-2D25-415F-9A66-C30E115CC33D}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{B5F8BC45-0E5A-3CFA-954F-0D3300698F7C}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{E7D137AD-6865-F46D-DECC-ABB9FD6E7096}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
@@ -1904,7 +1749,7 @@ External Setpoint Generation:
 							<Type>UINT</Type>
 						</Var>
 						<Var>
-							<Name>Standard.RealVelocimeterD</Name>
+							<Name>Standard.RealEncoder</Name>
 							<Type>UINT</Type>
 						</Var>
 						<Var>
@@ -1922,6 +1767,10 @@ External Setpoint Generation:
 						<Var>
 							<Name>Standard.Reel.NcToPlc</Name>
 							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>Standard.RealVelocimeterD</Name>
+							<Type>UDINT</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
@@ -2769,6 +2618,8 @@ External Setpoint Generation:
 							<MBoxUserCmdData>020003000a0000001a00000000000000000000000000000000000000000000002010801202000000050043757272656e74206c6f6f7020696e74656772616c2074696d6500</MBoxUserCmdData>
 							<MBoxUserCmdData>020003000c0000001f000000000000000000000000000000000000000000000020108015040000009100000056656c6f63697479206c6f6f702070726f706f7274696f6e616c206761696e00</MBoxUserCmdData>
 							<MBoxUserCmdData>020003000c0000001b000000000000000000000000000000000000000000000020108014040000009600000056656c6f63697479206c6f6f7020696e74656772616c2074696d6500</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000c00000013000000000000000000000000000000000000000000000020108031040000000000040056656c6f63697479206c696d69746174696f6e00</MBoxUserCmdData>
+							<MBoxUserCmdData>020003000a0000001100000000000000000000000000000000000000000000002010700b02000000ff7f546f72717565206c696d69746174696f6e00</MBoxUserCmdData>
 							<Pdo Name="FB Position" Index="#x1a00" Flags="#x0010" SyncMan="3">
 								<Entry Name="Position" Index="#x6000" Sub="#x11">
 									<Type>UDINT</Type>
@@ -3857,8 +3708,8 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 						<EtherCAT SlaveType="2" PdiType="#x0c05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x13ed3052" RevisionNo="#x04000000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL5101 1Ch. Inc. Encoder 5V" Desc="EL5101" PortABoxInfo="#x0100000a">
 							<SyncMan>001830002600010001000000300030003000001826010000</SyncMan>
 							<SyncMan>801830002200010002000000300030003000801822010000</SyncMan>
-							<SyncMan>001004002400010003000000000000000300001024010000</SyncMan>
-							<SyncMan>001106002000010004000000000000000500001120010000</SyncMan>
+							<SyncMan>001006002400010003000000000000000300001024010000</SyncMan>
+							<SyncMan>00110a002000010004000000000000000500001120010000</SyncMan>
 							<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
 							<Fmmu>0000000000000000001100010100000002000000000000000000000000000000</Fmmu>
 							<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
@@ -3902,7 +3753,7 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 									<Type>UINT</Type>
 								</Entry>
 							</Pdo>
-							<Pdo Name="ENC Status compact" Index="#x1a03" Flags="#x0010" SyncMan="3">
+							<Pdo Name="ENC Status compact" Index="#x1a03" Flags="#x0010">
 								<Entry Name="Latch C valid" Index="#x6010" Sub="#x01">
 									<Type>BIT</Type>
 								</Entry>
@@ -3958,7 +3809,7 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 									<Type>UINT</Type>
 								</Entry>
 							</Pdo>
-							<Pdo Name="ENC Status" Index="#x1a04" Flags="#x0010">
+							<Pdo Name="ENC Status" Index="#x1a04" Flags="#x0010" SyncMan="3">
 								<Entry Name="Latch C valid" Index="#x6010" Sub="#x01">
 									<Type>BIT</Type>
 								</Entry>
@@ -4053,7 +3904,7 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 									<Type>UINT</Type>
 								</Entry>
 							</Pdo>
-							<Pdo Name="ENC Control compact" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+							<Pdo Name="ENC Control compact" Index="#x1602" InOut="1" Flags="#x0010">
 								<Entry Name="Enable latch C" Index="#x7010" Sub="#x01">
 									<Type>BIT</Type>
 								</Entry>
@@ -4076,7 +3927,7 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 									<Type>UINT</Type>
 								</Entry>
 							</Pdo>
-							<Pdo Name="ENC Control" Index="#x1603" InOut="1" Flags="#x0010">
+							<Pdo Name="ENC Control" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
 								<Entry Name="Enable latch C" Index="#x7010" Sub="#x01">
 									<Type>BIT</Type>
 								</Entry>
@@ -4192,7 +4043,7 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				<Link VarA="PlcTask Inputs^Standard.RealLaserD" VarB="AI Standard Channel 1^Value"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 6 (EK1200)^Term 11 (EL5101)">
-				<Link VarA="PlcTask Inputs^Standard.RealVelocimeterD" VarB="ENC Status compact^Counter value"/>
+				<Link VarA="PlcTask Inputs^Standard.RealVelocimeterD" VarB="ENC Status^Counter value"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 4 (USB)^Box 1 (CX2100 Power Supply)">
 				<Link VarA="PlcTask Inputs^Standard.bSetBTN" VarB="DIS Inputs^Status^Down"/>

@@ -6,10 +6,15 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[LaserD := ((((((ReallaserD - laserSetPoint) - 2030)*22685)/22812)+2520) / 252) + 20; 
+      <ST><![CDATA[LaserHolder := ((((((ReallaserD) - 2030)*22685)/22812)+2520) / 252) + 20; 
 //double point sensor filter equation and converstion to CM (  x /252)
 
-
+IF laserHolder < 151 THEN
+	LaserD := laserHolder;
+	ELSE
+	LaserD := 0;	
+	
+END_IF
 
 
 
@@ -20,6 +25,9 @@ END_VAR
       <LineId Id="18" Count="0" />
       <LineId Id="17" Count="0" />
       <LineId Id="16" Count="0" />
+      <LineId Id="22" Count="0" />
+      <LineId Id="24" Count="2" />
+      <LineId Id="23" Count="0" />
       <LineId Id="10" Count="2" />
       <LineId Id="5" Count="0" />
     </LineIds>

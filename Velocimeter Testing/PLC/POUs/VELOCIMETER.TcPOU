@@ -6,7 +6,7 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[VelocimeterD := (RealVelocimeterD - VelocimeterSetPoint);
+      <ST><![CDATA[VelocimeterD := ((((RealVelocimeterD - VelocimeterSetPoint) - 15367) * 19790 ) / 45283) + 8482;
 
 
 
