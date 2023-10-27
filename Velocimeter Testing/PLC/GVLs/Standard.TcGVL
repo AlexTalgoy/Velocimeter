@@ -10,12 +10,18 @@ VAR_GLOBAL
 	RealLaserD				AT %I*	 :UINT;
 	RealVelocimeterD      	AT %I*   :UDINT;
 	RealEncoder				AT %I*	:UINT;
+	
+	veloreset				AT %Q*	:BOOL;
+	
 
 	EncoderD           			   :LREAL;
-	target						:LREAL;
+
 	REVmove						:BOOL;
 	
-	
+	target						:UDINT;
+		
+		
+		
 	laserSetPoint					:UINT;
 	LaserHolder							:UINT;
 	LaserD							:UINT;
@@ -28,6 +34,7 @@ VAR_GLOBAL
 	
 	
 	Reel					:AXIS_REF;
+	YAxis					:AXIS_REF;
 	
 	
 	bSetBTN			AT %I*	   	:BOOL;

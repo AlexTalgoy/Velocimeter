@@ -34,6 +34,9 @@
     <Compile Include="POUs\ReelCommand.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\YaxisBar.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\VELOCIMETER.TcPOU">
       <SubType>Code</SubType>
     </Compile>

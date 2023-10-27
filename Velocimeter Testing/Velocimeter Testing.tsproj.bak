@@ -1596,8 +1596,8 @@ External Setpoint Generation:
 				<Axis Id="1" CreateSymbols="true" AxisType="1">
 					<Name>Axis Reel</Name>
 					<AxisPara>
-						<Dynamic Acceleration="13187.03125" Deceleration="13187.03125" Jerk="39561.09375"/>
-						<Velo RefSearch="87.9135416666667" RefSync="87.9135416666667" SlowManual="439.567708333333" FastManual="2637.40625" Fast="8791.35416666667" Maximum="8791.35416666667"/>
+						<Dynamic Acceleration="101" Deceleration="101" Jerk="10201"/>
+						<Velo RefSearch="87.9135416666667" RefSync="87.9135416666667" SlowManual="439.567708333333" FastManual="2637.40625" Fast="8791.35416666667" Maximum="100"/>
 						<OtherSettings AllowMotionCmdToSlave="true"/>
 					</AxisPara>
 					<Encoder Name="Enc" EncType="19">
@@ -1659,7 +1659,7 @@ External Setpoint Generation:
 						</Vars>
 					</Encoder>
 					<Drive Name="Drive" DrvType="16">
-						<DrvPara MaxCount="#xffffffff" DriveControlDWord="#x00020000">
+						<DrvPara MaxCount="#xffffffff">
 							<Analog VeloReferenz="9670.48958333333" VeloScale="32" TorqueSetpointScale="10" ScaleFactorActTorque="0.1"/>
 							<TimeComp TaskDelayCycles="1"/>
 						</DrvPara>
@@ -1735,11 +1735,90 @@ External Setpoint Generation:
 						</Var>
 					</Vars>
 				</Axis>
+				<Axis Id="2" CreateSymbols="true" AxisType="1">
+					<Name>Axis_Y</Name>
+					<AxisPara>
+						<Dynamic AccelerationMaximum="0" DecelerationMaximum="0" Acceleration="1010" Deceleration="1010" Jerk="102010"/>
+						<Velo RefSearch="200" RefSync="200" SlowManual="120" FastManual="1000" Fast="2332.91666666667" Maximum="1000"/>
+						<PositionAreaControl Range="10"/>
+						<MotionControl Time="0.3"/>
+						<TargetPosControl Range="1"/>
+						<PEHControl Time="10"/>
+						<OtherSettings PulseDistancePos="1" PulseDistanceNeg="1"/>
+					</AxisPara>
+					<Encoder Name="Axis_Y_Enc" EncType="19">
+						<EncPara ScaleFactorNumerator="2.384185791e-05" Offset="504.6462" MaxCount="#xffffffff">
+							<SoftEndMaxControl Enable="true" Range="4150"/>
+							<Inc RefSearchInverse="true" RefSyncInverse="false"/>
+						</EncPara>
+						<Vars VarGrpType="1">
+							<Name>Inputs</Name>
+							<Var>
+								<Name>Axis_Y_Enc_In</Name>
+								<Type GUID="{901C2423-655B-45CE-B7E3-21F174F0F99F}" Namespace="MC">NCENCODERSTRUCT_IN2B</Type>
+								<SubVar>
+									<Name>nState4</Name>
+									<Comment><![CDATA[Encoder Status 4 (automatically linked):
+0x01 (0000 0001) = IO data invalid (e.g. EtherCAT 'WcState')
+0x02 (0000 0010) = IO data input toggle (e.g. EtherCAT 'InputToggle')
+]]></Comment>
+								</SubVar>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="2">
+							<Name>Outputs</Name>
+							<Var>
+								<Name>Axis_Y_Enc_Out</Name>
+								<Type GUID="{9CC50AB2-5D79-4869-A3C2-1FA7761BAFEA}" Namespace="MC">NCENCODERSTRUCT_OUT2</Type>
+							</Var>
+						</Vars>
+					</Encoder>
+					<Drive Name="Axis_Y_Drive" DrvType="16">
+						<DrvPara MaxCount="#xffffffff" DriveControlDWord="#x00020000">
+							<Analog VeloReferenz="2566.20833333333" VeloScale="32" SmoothingFilterOrder="0" SmoothingFilterTime="0"/>
+							<TimeComp TaskDelayCycles="1"/>
+						</DrvPara>
+						<Vars VarGrpType="1">
+							<Name>Inputs</Name>
+							<Var>
+								<Name>Axis_Y_Drive_In</Name>
+								<Type GUID="{F95C7C69-0C87-46C4-9559-1285CCA5B23A}" Namespace="MC">NCDRIVESTRUCT_IN2</Type>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="2">
+							<Name>Outputs</Name>
+							<Var>
+								<Name>Axis_Y_Drive_Out</Name>
+								<Type GUID="{644DC4BD-3D15-4DCB-94C7-24F3A5D579AA}" Namespace="MC">NCDRIVESTRUCT_OUT2</Type>
+							</Var>
+						</Vars>
+					</Drive>
+					<Controller Name="Axis_Y_Ctrl" CtrType="1">
+						<CtrPara PriorControlFactor="1">
+							<PosDiffControl Range="10"/>
+							<Observer BandWidth="20"/>
+						</CtrPara>
+					</Controller>
+					<Vars VarGrpType="1" InsertType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>Axis_Y_FromPlc</Name>
+							<Type GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" Namespace="MC">PLCTONC_AXIS_REF</Type>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2" InsertType="1">
+						<Name>Outputs</Name>
+						<Var>
+							<Name>Axis_Y_ToPlc</Name>
+							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+						</Var>
+					</Vars>
+				</Axis>
 			</NC>
 		</Motion>
 		<Plc>
 			<Project GUID="{BE78A640-2D25-415F-9A66-C30E115CC33D}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{E7D137AD-6865-F46D-DECC-ABB9FD6E7096}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{AA5187CF-6B35-6291-5A18-717B8B51080E}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
@@ -1753,8 +1832,20 @@ External Setpoint Generation:
 							<Type>UINT</Type>
 						</Var>
 						<Var>
+							<Name>Standard.RealVelocimeterD</Name>
+							<Type>UDINT</Type>
+						</Var>
+						<Var>
+							<Name>ReelCommand.velolatch</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
 							<Name>Standard.bSetBTN</Name>
 							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>Standard.Reel.NcToPlc</Name>
+							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
 						</Var>
 						<Var>
 							<Name>Standard.bStartBTN</Name>
@@ -1765,18 +1856,26 @@ External Setpoint Generation:
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>Standard.Reel.NcToPlc</Name>
-							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
+							<Name>YaxisBar.velolatch</Name>
+							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>Standard.RealVelocimeterD</Name>
-							<Type>UDINT</Type>
+							<Name>Standard.YAxis.NcToPlc</Name>
+							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
 						</Var>
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
 						<Name>PlcTask Outputs</Name>
 						<Var>
 							<Name>Standard.Reel.PlcToNc</Name>
+							<Type GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" Namespace="MC">PLCTONC_AXIS_REF</Type>
+						</Var>
+						<Var>
+							<Name>Standard.veloreset</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>Standard.YAxis.PlcToNc</Name>
 							<Type GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 						</Var>
 					</Vars>
@@ -4025,17 +4124,27 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 		<OwnerA Name="TINC^NC-Task 1 SAF^Axes^Axis Reel">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 6 (EK1200)^Term 8 (EL7221-9014)">
 				<Link VarA="Drive^Inputs^In^nDcOutputTime" VarB="InfoData^DcOutputShift"/>
-				<Link VarA="Drive^Inputs^In^nState1" VarB="DRV Statusword^Statusword"/>
-				<Link VarA="Drive^Inputs^In^nState2" VarB="DRV Statusword^Statusword" Size="8" OffsB="8"/>
 				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
 				<Link VarA="Drive^Inputs^In^nState4" VarB="WcState^WcState"/>
-				<Link VarA="Drive^Outputs^Out^nCtrl1" VarB="DRV Controlword^Controlword"/>
-				<Link VarA="Drive^Outputs^Out^nCtrl2" VarB="DRV Controlword^Controlword" Size="8" OffsB="8"/>
-				<Link VarA="Drive^Outputs^Out^nDataOut2" VarB="DRV Target velocity^Target velocity"/>
-				<Link VarA="Enc^Inputs^In^nDataIn1" VarB="FB Position^Position"/>
 				<Link VarA="Enc^Inputs^In^nDcInputTime" VarB="InfoData^DcInputShift"/>
 				<Link VarA="Enc^Inputs^In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
 				<Link VarA="Enc^Inputs^In^nState4" VarB="WcState^WcState"/>
+			</OwnerB>
+		</OwnerA>
+		<OwnerA Name="TINC^NC-Task 1 SAF^Axes^Axis_Y">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 6 (EK1200)^Term 8 (EL7221-9014)">
+				<Link VarA="Axis_Y_Drive^Inputs^Axis_Y_Drive_In^nDcOutputTime" VarB="InfoData^DcOutputShift"/>
+				<Link VarA="Axis_Y_Drive^Inputs^Axis_Y_Drive_In^nState1" VarB="DRV Statusword^Statusword"/>
+				<Link VarA="Axis_Y_Drive^Inputs^Axis_Y_Drive_In^nState2" VarB="DRV Statusword^Statusword" Size="8" OffsB="8"/>
+				<Link VarA="Axis_Y_Drive^Inputs^Axis_Y_Drive_In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Axis_Y_Drive^Inputs^Axis_Y_Drive_In^nState4" VarB="WcState^WcState"/>
+				<Link VarA="Axis_Y_Drive^Outputs^Axis_Y_Drive_Out^nCtrl1" VarB="DRV Controlword^Controlword"/>
+				<Link VarA="Axis_Y_Drive^Outputs^Axis_Y_Drive_Out^nCtrl2" VarB="DRV Controlword^Controlword" Size="8" OffsB="8"/>
+				<Link VarA="Axis_Y_Drive^Outputs^Axis_Y_Drive_Out^nDataOut2" VarB="DRV Target velocity^Target velocity"/>
+				<Link VarA="Axis_Y_Enc^Inputs^Axis_Y_Enc_In^nDataIn1" VarB="FB Position^Position"/>
+				<Link VarA="Axis_Y_Enc^Inputs^Axis_Y_Enc_In^nDcInputTime" VarB="InfoData^DcInputShift"/>
+				<Link VarA="Axis_Y_Enc^Inputs^Axis_Y_Enc_In^nState4" VarB="WcState^InputToggle" Size="1" OffsA="1"/>
+				<Link VarA="Axis_Y_Enc^Inputs^Axis_Y_Enc_In^nState4" VarB="WcState^WcState"/>
 			</OwnerB>
 		</OwnerA>
 		<OwnerA Name="TIPC^PLC^PLC Instance">
@@ -4043,7 +4152,9 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 				<Link VarA="PlcTask Inputs^Standard.RealLaserD" VarB="AI Standard Channel 1^Value"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 6 (EK1200)^Term 11 (EL5101)">
+				<Link VarA="PlcTask Inputs^ReelCommand.velolatch" VarB="ENC Status^Latch C valid"/>
 				<Link VarA="PlcTask Inputs^Standard.RealVelocimeterD" VarB="ENC Status^Counter value"/>
+				<Link VarA="PlcTask Outputs^Standard.veloreset" VarB="ENC Control^Set counter"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 4 (USB)^Box 1 (CX2100 Power Supply)">
 				<Link VarA="PlcTask Inputs^Standard.bSetBTN" VarB="DIS Inputs^Status^Down"/>
@@ -4053,6 +4164,10 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^Axis Reel">
 				<Link VarA="PlcTask Inputs^Standard.Reel.NcToPlc" VarB="Outputs^ToPlc"/>
 				<Link VarA="PlcTask Outputs^Standard.Reel.PlcToNc" VarB="Inputs^FromPlc"/>
+			</OwnerB>
+			<OwnerB Name="TINC^NC-Task 1 SAF^Axes^Axis_Y">
+				<Link VarA="PlcTask Inputs^Standard.YAxis.NcToPlc" VarB="Outputs^Axis_Y_ToPlc"/>
+				<Link VarA="PlcTask Outputs^Standard.YAxis.PlcToNc" VarB="Inputs^Axis_Y_FromPlc"/>
 			</OwnerB>
 		</OwnerA>
 	</Mappings>

@@ -6,28 +6,38 @@ VAR
 	Hello :BOOL;
 	
 	
+
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[
+EncoderD := reel.NcToPlc.ActPos;
+
+
 Laser();
 
-
+YaxisBar();
 
 Velocimeter();
 
 ReelCommand();
 
-
 IF bSet OR bSetBTN THEN
-	laserSetpoint	:= reallaserD;
-	VelocimeterSetPoint := realVelocimeterD;
+	veloreset	:= TRUE;
+	
+	ELSE 
+	veloreset	:= FALSE;	
+	
 	
 END_IF
+
 
 ]]></ST>
     </Implementation>
     <LineIds Name="MAIN">
+      <LineId Id="55" Count="0" />
+      <LineId Id="54" Count="0" />
+      <LineId Id="56" Count="0" />
       <LineId Id="19" Count="0" />
       <LineId Id="10" Count="0" />
       <LineId Id="25" Count="0" />
@@ -35,14 +45,15 @@ END_IF
       <LineId Id="26" Count="0" />
       <LineId Id="16" Count="0" />
       <LineId Id="27" Count="1" />
-      <LineId Id="46" Count="0" />
       <LineId Id="45" Count="0" />
       <LineId Id="29" Count="0" />
       <LineId Id="31" Count="0" />
       <LineId Id="34" Count="0" />
+      <LineId Id="57" Count="2" />
       <LineId Id="47" Count="0" />
       <LineId Id="32" Count="0" />
       <LineId Id="30" Count="0" />
+      <LineId Id="69" Count="0" />
       <LineId Id="17" Count="0" />
     </LineIds>
   </POU>
