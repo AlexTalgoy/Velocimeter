@@ -1433,7 +1433,7 @@ External Setpoint Generation:
 			</ArrayInfo>
 		</DataType>
 		<DataType>
-			<Name GUID="{18071995-0000-0000-0000-00200000000D}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..12] OF BIT</Name>
+			<Name GUID="{18071995-0000-0000-0000-00200000000D}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..12] OF BIT</Name>
 			<BitSize>13</BitSize>
 			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
 			<ArrayInfo>
@@ -1738,8 +1738,8 @@ External Setpoint Generation:
 				<Axis Id="2" CreateSymbols="true" AxisType="1">
 					<Name>Axis_Y</Name>
 					<AxisPara>
-						<Dynamic AccelerationMaximum="0" DecelerationMaximum="0" Acceleration="1010" Deceleration="1010" Jerk="102010"/>
-						<Velo RefSearch="200" RefSync="200" SlowManual="120" FastManual="1000" Fast="2332.91666666667" Maximum="1000"/>
+						<Dynamic AccelerationMaximum="1000" DecelerationMaximum="1000" Acceleration="101" Deceleration="101" Jerk="10201"/>
+						<Velo RefSearch="200" RefSync="200" SlowManual="120" FastManual="1000" Fast="2332.91666666667" Maximum="10000"/>
 						<PositionAreaControl Range="10"/>
 						<MotionControl Time="0.3"/>
 						<TargetPosControl Range="1"/>
@@ -1756,13 +1756,6 @@ External Setpoint Generation:
 							<Var>
 								<Name>Axis_Y_Enc_In</Name>
 								<Type GUID="{901C2423-655B-45CE-B7E3-21F174F0F99F}" Namespace="MC">NCENCODERSTRUCT_IN2B</Type>
-								<SubVar>
-									<Name>nState4</Name>
-									<Comment><![CDATA[Encoder Status 4 (automatically linked):
-0x01 (0000 0001) = IO data invalid (e.g. EtherCAT 'WcState')
-0x02 (0000 0010) = IO data input toggle (e.g. EtherCAT 'InputToggle')
-]]></Comment>
-								</SubVar>
 							</Var>
 						</Vars>
 						<Vars VarGrpType="2">
@@ -1818,17 +1811,21 @@ External Setpoint Generation:
 		</Motion>
 		<Plc>
 			<Project GUID="{BE78A640-2D25-415F-9A66-C30E115CC33D}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{AA5187CF-6B35-6291-5A18-717B8B51080E}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc" TmcHash="{AA5C8F02-00FB-7D5B-237F-BFEF91C56C3A}">
 					<Name>PLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Vars VarGrpType="1">
 						<Name>PlcTask Inputs</Name>
 						<Var>
-							<Name>Standard.RealLaserD</Name>
-							<Type>UINT</Type>
+							<Name>YaxisBar.velolatch</Name>
+							<Type>BOOL</Type>
 						</Var>
 						<Var>
-							<Name>Standard.RealEncoder</Name>
+							<Name>ReelCommand.velolatch</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>Standard.RealLaserD</Name>
 							<Type>UINT</Type>
 						</Var>
 						<Var>
@@ -1836,11 +1833,15 @@ External Setpoint Generation:
 							<Type>UDINT</Type>
 						</Var>
 						<Var>
-							<Name>ReelCommand.velolatch</Name>
-							<Type>BOOL</Type>
+							<Name>Standard.RealEncoder</Name>
+							<Type>UINT</Type>
 						</Var>
 						<Var>
 							<Name>Standard.bSetBTN</Name>
+							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>Standard.bStartBTN</Name>
 							<Type>BOOL</Type>
 						</Var>
 						<Var>
@@ -1848,31 +1849,23 @@ External Setpoint Generation:
 							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
 						</Var>
 						<Var>
-							<Name>Standard.bStartBTN</Name>
-							<Type>BOOL</Type>
+							<Name>Standard.YAxis.NcToPlc</Name>
+							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
 						</Var>
 						<Var>
 							<Name>Standard.bStopBTN</Name>
 							<Type>BOOL</Type>
 						</Var>
-						<Var>
-							<Name>YaxisBar.velolatch</Name>
-							<Type>BOOL</Type>
-						</Var>
-						<Var>
-							<Name>Standard.YAxis.NcToPlc</Name>
-							<Type GUID="{25521FAA-EA5F-4C7F-8864-BBCCDACD2E98}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
-						</Var>
 					</Vars>
 					<Vars VarGrpType="2" AreaNo="1">
 						<Name>PlcTask Outputs</Name>
 						<Var>
-							<Name>Standard.Reel.PlcToNc</Name>
-							<Type GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" Namespace="MC">PLCTONC_AXIS_REF</Type>
-						</Var>
-						<Var>
 							<Name>Standard.veloreset</Name>
 							<Type>BOOL</Type>
+						</Var>
+						<Var>
+							<Name>Standard.Reel.PlcToNc</Name>
+							<Type GUID="{96B75FEB-2D84-43BE-A3EC-D9A681F27D52}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 						</Var>
 						<Var>
 							<Name>Standard.YAxis.PlcToNc</Name>
@@ -1891,6 +1884,13 @@ External Setpoint Generation:
 						<OwnerA Name="OutputSrc" Prefix="TIPC^PLC^PLC Instance" Type="2">
 							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 5 (EL5101)">
 								<Link VarA="Standard.ResetVelocimeter" TypeA="WORD" InOutA="1" GuidA="{18071995-0000-0000-0000-000000000004}" VarB="ENC Control compact^Control" RestoreInfo="ANotFound"/>
+							</OwnerB>
+						</OwnerA>
+					</UnrestoredVarLinks>
+					<UnrestoredVarLinks ImportTime="2023-10-30T09:30:11">
+						<OwnerA Name="InputDst" Prefix="TIPC^PLC^PLC Instance" Type="1">
+							<OwnerB Name="TINC^NC-Task 1 SAF^Axes^Axis_Y">
+								<Link VarA="YaxisBar.NegDIR" TypeA="BOOL" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000030}" VarB="Outputs^Axis_Y_ToPlc^StateDWord^NegativeDirection" Size="1" RestoreInfo="ANotFound"/>
 							</OwnerB>
 						</OwnerA>
 					</UnrestoredVarLinks>
@@ -4120,6 +4120,7 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 		<MappingInfo Identifier="{00000000-2001-0850-0020-500860000403}" Id="#x02030050"/>
 		<MappingInfo Identifier="{00000000-0010-0304-3000-040310000403}" Id="#x02030010"/>
 		<MappingInfo Identifier="{00000000-0020-0304-3000-040322000403}" Id="#x02030030"/>
+		<MappingInfo Identifier="{08502001-0010-0304-0020-500810000403}" Id="#x02030060" Watchdog="00000000000000000000000000000000"/>
 		<MappingInfo Identifier="{05000010-2001-0850-3000-040300205008}" Id="#x02030040" Watchdog="14000000040000000400000004000000"/>
 		<OwnerA Name="TINC^NC-Task 1 SAF^Axes^Axis Reel">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 6 (EK1200)^Term 8 (EL7221-9014)">
@@ -4132,6 +4133,9 @@ Bit1: Value bigger/equal Limit2]]></Comment>
 			</OwnerB>
 		</OwnerA>
 		<OwnerA Name="TINC^NC-Task 1 SAF^Axes^Axis_Y">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 6 (EK1200)^Term 11 (EL5101)">
+				<Link VarA="Outputs^Axis_Y_ToPlc^StateDWord^PositiveDirection" VarB="ENC Control^Enable latch C"/>
+			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 6 (EK1200)^Term 8 (EL7221-9014)">
 				<Link VarA="Axis_Y_Drive^Inputs^Axis_Y_Drive_In^nDcOutputTime" VarB="InfoData^DcOutputShift"/>
 				<Link VarA="Axis_Y_Drive^Inputs^Axis_Y_Drive_In^nState1" VarB="DRV Statusword^Statusword"/>
