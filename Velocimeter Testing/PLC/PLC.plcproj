@@ -31,6 +31,12 @@
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\FAST.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\VariableTesting.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\ReelCommand.TcPOU">
       <SubType>Code</SubType>
     </Compile>

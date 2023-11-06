@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FAST" Id="{a373178b-a3f5-45aa-8fdd-f702d1165cf0}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM FAST
+VAR
+		VeloConvert  	:LREAL;
+		EncoderUdint	:UDINT;
+		test			:BOOL;
+		
+		
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+
+VeloConvert := ((RealVelocimeterD / 250.0000000)/10);
+
+
+
+EncoderD := (yAxis.NcToPlc.ActPos *( -1.00)) /10 ;
+
+
+
+test;
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="FAST">
+      <LineId Id="31" Count="1" />
+      <LineId Id="5" Count="0" />
+      <LineId Id="12" Count="1" />
+      <LineId Id="22" Count="0" />
+      <LineId Id="14" Count="5" />
+      <LineId Id="11" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -6,10 +6,10 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[LaserHolder := ((((((ReallaserD) - 2030)*22685)/22812)+2520) / 252) + 20; 
+      <ST><![CDATA[LaserHolder := ((((((ReallaserD) - 2030)*22685)/22812)+2520) / 252.00) ; 
 //double point sensor filter equation and converstion to CM (  x /252)
 
-IF laserHolder < 151 THEN
+IF laserHolder < 1501 THEN
 	LaserD := laserHolder;
 	ELSE
 	LaserD := 0;	
